@@ -1,13 +1,14 @@
 export default function Home() {
   return (
-    <div className={"flex justify-center flex-col items-center w-screen h-screen"}>
-      <div className="flex">
+    <div className={"flex justify-start flex-col items-center w-screen h-screen"}>
+
+      <div className="flex p-8">
         <img src="/images/logo.png" />
       </div>
 
-      <div className={"flex"}>
+      <div className={"flex flex-col sm:flex-row"}>
         <img src="/images/construction-image.png" />
-        <div className={"flex justify-center flex-col gap-4 p-8"}>
+        <div className={"flex justify-center flex-row sm:flex-col gap-4 p-8 "}>
           <a href="https://brigadeirosdemaedoces.goomer.app/" target={"_blank"}>
             <img src="/images/goomer.png" />
           </a>
@@ -21,10 +22,10 @@ export default function Home() {
       </div>
 
       <div className={"text-white"}>
-        <p className="text-center uppercase text-2xl mt-16">
+        <p className="text-center uppercase text-2xl mt-8 sm:mt-16">
           Nosso site está em construção, <br />
           mas estamos também <br />
-          nos canais
+          nesses canais
         </p>
       </div>
     </div>
