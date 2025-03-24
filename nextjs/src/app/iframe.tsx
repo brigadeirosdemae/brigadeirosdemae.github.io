@@ -15,10 +15,12 @@ import "./frame.css";
 
 export default () => {
 
+const canvaUrl = "https://www.canva.com/design/DAGiGsJkUd8/f_zSH_fQRDMoTa8f0MxT1Q/view?embed";
+
 return <div className="flex-1 flex w-[100%] h-fit mt-10">
  <iframe loading="lazy" 
     className="w-[100vw] h-[100vh]"
-    src="https://www.canva.com/design/DAGiGsJkUd8/KKfFlBjmB3Bl-YQEy32yyQ/watch?embed"  
+    src={`${canvaUrl}`}  
     allow="fullscreen"
     ></iframe>
 </div>}
