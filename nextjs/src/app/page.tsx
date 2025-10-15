@@ -16,15 +16,6 @@ export default function Home() {
           <img src="/images/instagram.png" className="w-12 h-12"/>
         </a>
       </div>
-
-      <div>
-        <a href="#cardapio" className="block font-semibold mt-8"> Cardápio </a>
-      </div>
-
-      <div id="cardapio">
-        <IframeSite />
-      </div>
-
     </div>
   );
 }
