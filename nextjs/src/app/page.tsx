@@ -6,6 +6,7 @@ import {
   Product
 } from "./api/products";
 import { ProductView } from "./components/product";
+import Loading from "./components/ui/Loading";
 
 export default function Home() {
 
@@ -33,6 +34,9 @@ export default function Home() {
                 <h2 className="text-3xl md:text-4xl font-heading font-bold text-center text-brand-dark mb-12">
                   Faça sua encomenda
                 </h2>
+
+                {!products.length && <div className="flex justify-center w-full"><Loading /></div>}
+
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
                   {

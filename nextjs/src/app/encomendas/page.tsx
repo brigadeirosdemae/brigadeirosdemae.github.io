@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { CategorySection } from "../components/category/categorySection";
 import { Category, ProductManager } from "../api/products";
+import Loading from "../components/ui/Loading";
 
 export default function Page() {
 
@@ -19,6 +20,8 @@ export default function Page() {
       <h1 className="text-4xl md:text-5xl font-heading font-bold text-brand-dark">Cardápio para Encomendas</h1>
       <p className="text-lg text-gray-500 mt-4">Ideal para festas, eventos e presentes especiais.</p>
     </section>
+
+    { !categories.length && <div className="flex justify-center w-full"><Loading /></div> }
 
     {categories.map(category => <CategorySection key={category.id} category={category} />)}
 

@@ -55,7 +55,7 @@
       "id": "bg10",
       "categoria": "Brigadeiros Gourmet 10g",
       "imagemCategoria": "https://placehold.co/400x300/e5943a/3a2422?text=Brigadeiros+10g",
-      "observacao_geral": "Brigadeiros de 10g são pequenos, não entregam a mesma proporção visual que os de 15g. Não indicado para enfeitar a mesa, somente para servir.",
+      "observacaoGeral": "Brigadeiros de 10g são pequenos, não entregam a mesma proporção visual que os de 15g. Não indicado para enfeitar a mesa, somente para servir.",
       "itens": [
         {
           "id": "bg10_trad",
@@ -134,7 +134,7 @@
       "id": "dp",
       "categoria": "Doces Personalizados",
       "imagemCategoria": "https://placehold.co/400x300/f4e9de/3a2422?text=Personalizados",
-      "observacao_geral": "Decorações em pasta americana mais complexas, consultar preços.",
+      "observacaoGeral": "Decorações em pasta americana mais complexas, consultar preços.",
       "itens": [
         {
           "id": "dp_pao_mel",

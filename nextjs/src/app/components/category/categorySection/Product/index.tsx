@@ -5,8 +5,15 @@ interface ProductProps {
   product: Product
 }
 
-const Preco = ({preco}: {preco: number}) => {
-  return <> { preco && `R$ ${ preco.toFixed(2).replace('.',',')}` }</> 
+const Preco = ({preco}: {preco: number| string}) => {
+  let produtoPreco = "";
+  if (typeof(preco) === "string") {
+    produtoPreco = preco.replace('.',',')
+  } else if(typeof(preco) === "number") {
+    produtoPreco = preco.toFixed(2).replace('.',',')
+  }
+
+  return <> { preco && `R$ ${ produtoPreco }` }</> 
 }
 
 export const ProductView: FC<ProductProps> = ({ product }) => {
@@ -25,13 +32,13 @@ export const ProductView: FC<ProductProps> = ({ product }) => {
           {product.descricao}
         </p>}
 
-        { product.opcoes?.sabores && <p>
+        { product.opcoes?.sabores?.length ?<p>
           <span className="font-semibold">Sabores: </span> 
             { product.opcoes?.sabores.join(', ') }
-          </p>
+          </p>: <></>
         }
 
-        { product.variacoes && <p>
+        { product.variacoes?.length ? <p>
           <span className="font-semibold">Variantes: </span> 
             <ul>
             { product.variacoes.map((v, i) => <li key={ i } className="py-2"> 
@@ -42,7 +49,7 @@ export const ProductView: FC<ProductProps> = ({ product }) => {
               <hr />
             </li>) }
             </ul>
-          </p>
+          </p>: <></>
         }
 
 

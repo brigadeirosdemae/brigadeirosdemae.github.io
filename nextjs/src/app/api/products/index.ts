@@ -41,7 +41,12 @@ export class ProductManager {
   static data: ProductDatabase | null = null;
 
   static async fetch() {
-    const result = await fetch('/products/encomenda/data.json');
+    let result = await fetch('https://script.google.com/macros/s/AKfycbxj4lw2jrdHGipwO1MhgRHs-vlQZX0MI9dhQk8myMhuVbt7pQU5uwAbVOEWRTFH-3oi/exec');
+
+    if (result.status === 302) {
+      result = await fetch(result.headers.get('Location') || '', { method: 'GET' });
+    }
+
     this.data = await result.json() as ProductDatabase;
     return new ProductManager();
   }
