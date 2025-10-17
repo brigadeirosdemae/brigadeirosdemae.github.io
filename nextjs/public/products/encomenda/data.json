@@ -1,0 +1,188 @@
+{
+  "produtosEncomenda": [
+    {
+      "id": "bg15",
+      "categoria": "Brigadeiros Gourmet 15g",
+      "imagemCategoria": "https://placehold.co/400x300/e5943a/3a2422?text=Brigadeiros+15g",
+      "itens": [
+        {
+          "id": "bg15_trad",
+          "nome": "Sabores Tradicionais",
+          "preco": 210.00,
+          "unidade": "cento",
+          "descricao": "Até 4 sabores por cento. Mínimo 25 unidades por sabor. Para quantidades menores, a unidade sai a R$2,50.",
+          "opcoes": {
+            "sabores": ["Chocolate", "Beijinho", "Ninho", "Bicho de pé (Moranguinho)", "Casadinho", "Paçoca", "Sensação", "Cajuzinho", "Chocolate com confetes", "Café", "Café com leite", "Ninho com nutella", "Chocolate com Nutella", "Ferrero", "Bicho de pé com Nutella", "Churros", "Maracujá", "Tortinha de limão", "Kinder Bueno", "Oreo", "Romeu e Julieta", "Pão de mel", "Caramelo salgado", "Ninho com geleia de morango"]
+          }
+        },
+        {
+          "id": "bg15_frutas",
+          "nome": "Sabores com Frutas",
+          "preco": 225.00,
+          "unidade": "cento",
+          "descricao": "Mínimo 25 unidades por sabor. Para quantidades menores, a unidade sai a R$2,50.",
+          "opcoes": {
+            "sabores": ["Surpresa de uva", "Chocolate com morango", "Ninho com morango"]
+          }
+        },
+        {
+          "id": "bg15_pistache",
+          "nome": "Pistache",
+          "preco": 290.00,
+          "unidade": "cento",
+          "descricao": "Sabor único de Pistache. Para quantidades menores, a unidade sai a R$3,10.",
+          "opcoes": {}
+        },
+        {
+            "id": "bg15_add",
+            "nome": "Adicionais",
+            "variacoes": [
+                {
+                    "descricao": "Personalização temática (carimbos, formatos)",
+                    "preco": 15.00,
+                    "unidade": "cento"
+                },
+                {
+                    "descricao": "Apliques em pasta americana",
+                    "preco": 0.30,
+                    "unidade": "unidade"
+                }
+            ]
+        }
+      ]
+    },
+    {
+      "id": "bg10",
+      "categoria": "Brigadeiros Gourmet 10g",
+      "imagemCategoria": "https://placehold.co/400x300/e5943a/3a2422?text=Brigadeiros+10g",
+      "observacao_geral": "Brigadeiros de 10g são pequenos, não entregam a mesma proporção visual que os de 15g. Não indicado para enfeitar a mesa, somente para servir.",
+      "itens": [
+        {
+          "id": "bg10_trad",
+          "nome": "Sabores Tradicionais",
+          "preco": 135.00,
+          "unidade": "cento",
+          "descricao": "Até 4 sabores por cento. Mínimo 25 unidades por sabor. Para quantidades menores, a unidade sai a R$1,50.",
+          "opcoes": {
+            "sabores": ["Chocolate", "Beijinho", "Ninho", "Bicho de pé (Moranguinho)", "Casadinho", "Paçoca", "Sensação", "Cajuzinho", "Chocolate com confetes", "Café", "Café com leite", "Ninho com nutella", "Chocolate com Nutella", "Ferrero", "Bicho de pé com Nutella", "Churros", "Maracujá", "Tortinha de limão", "Kinder Bueno", "Oreo", "Romeu e Julieta", "Pão de mel", "Caramelo salgado"]
+          }
+        },
+        {
+          "id": "bg10_pistache",
+          "nome": "Pistache",
+          "preco": 200.00,
+          "unidade": "cento",
+          "descricao": "Sabor único de Pistache. Para quantidades menores, a unidade sai a R$2,20.",
+          "opcoes": {}
+        }
+      ]
+    },
+    {
+      "id": "mb",
+      "categoria": "Mini Brownie",
+      "imagemCategoria": "https://placehold.co/400x300/3a2422/f4e9de?text=Mini+Brownie",
+      "itens": [
+        {
+          "id": "mb_simples",
+          "nome": "Sabores Simples",
+          "preco": 210.00,
+          "unidade": "cento",
+          "opcoes": {
+            "sabores": ["Chocolate", "Ninho", "Doce de Leite"]
+          }
+        },
+        {
+          "id": "mb_composto",
+          "nome": "Sabores Compostos",
+          "preco": 235.00,
+          "unidade": "cento",
+          "descricao": "Até 4 sabores por cento.",
+          "opcoes": {
+            "sabores": ["Chocolate e morango", "Ninho e morango", "Nutella", "Nutella com morango", "Ninho com Nutella", "Ninho com Nutella e morango"]
+          }
+        }
+      ]
+    },
+    {
+      "id": "df",
+      "categoria": "Doces Finos",
+      "imagemCategoria": "https://placehold.co/400x300/d4b495/3a2422?text=Doces+Finos",
+      "itens": [
+        {
+          "id": "df_bombom",
+          "nome": "Mini Bombons (Trufas)",
+          "preco": 3.00,
+          "unidade": "unidade",
+          "descricao": "Formato: tradicional ou flor. Quantidade mínima 10 unidades. Acréscimo de Nutella R$1,00/un. Bombons apenas de Nutella R$5,00/un.",
+          "opcoes": {
+            "sabores": ["Doce de leite", "Chocolate", "Coco", "Ninho", "Bicho de pé", "Paçoca", "Café", "Maracujá", "Floresta Negra"]
+          }
+        },
+        {
+          "id": "df_copinho",
+          "nome": "Copinho de Chocolate",
+          "preco": 3.00,
+          "unidade": "unidade",
+          "descricao": "Formato: tradicional ou coração. Quantidade mínima 10 unidades. Acréscimo de Nutella R$1,00/un. Bombons apenas de Nutella R$5,00/un.",
+          "opcoes": {
+            "sabores": ["Doce de leite", "Chocolate", "Coco", "Ninho", "Bicho de pé", "Paçoca", "Café", "Maracujá", "Floresta Negra"]
+          }
+        }
+      ]
+    },
+    {
+      "id": "dp",
+      "categoria": "Doces Personalizados",
+      "imagemCategoria": "https://placehold.co/400x300/f4e9de/3a2422?text=Personalizados",
+      "observacao_geral": "Decorações em pasta americana mais complexas, consultar preços.",
+      "itens": [
+        {
+          "id": "dp_pao_mel",
+          "nome": "Pão de Mel",
+          "opcoes": {"sabores": ["Doce de leite", "Chocolate", "Prestígio"]},
+          "variacoes": [
+            { "id":"pdm_m_semdec", "descricao": "Mini - Sem decoração (saquinho e laço)", "preco": 3.50, "unidade": "unidade" },
+            { "id":"pdm_g_semdec", "descricao": "Grande - Sem decoração (saquinho e laço)", "preco": 5.50, "unidade": "unidade" },
+            { "id":"pdm_m_papel", "descricao": "Mini - Com aplique em papelaria", "preco": 5.50, "unidade": "unidade" },
+            { "id":"pdm_g_papel", "descricao": "Grande - Com aplique em papelaria", "preco": 9.00, "unidade": "unidade" },
+            { "id":"pdm_m_pasta", "descricao": "Mini - Decoração em pasta americana", "preco": 6.50, "unidade": "unidade" },
+            { "id":"pdm_g_pasta", "descricao": "Grande - Decoração em pasta americana", "preco": 12.00, "unidade": "unidade" }
+          ]
+        },
+        {
+          "id": "dp_pirulito",
+          "nome": "Pirulito de Chocolate (Nobre)",
+          "variacoes": [
+            { "id":"pir_semdec", "descricao": "Sem decoração (saquinho e laço)", "preco": 6.00, "unidade": "unidade" },
+            { "id":"pir_papel", "descricao": "Com aplique em papelaria", "preco": 8.00, "unidade": "unidade" },
+            { "id":"pir_pasta", "descricao": "Decoração em pasta americana", "preco": 10.00, "unidade": "unidade" }
+          ]
+        },
+        {
+          "id": "dp_caixa_brownie",
+          "nome": "Caixinha de Brownie",
+           "opcoes": {"sabores": ["Doce de leite", "Chocolate", "Ninho"]},
+          "variacoes": [
+            { "id":"cxb_semdec", "descricao": "Sem decoração (saquinho e laço)", "preco": 10.00, "unidade": "unidade" },
+            { "id":"cxb_papel", "descricao": "Com aplique em papelaria", "preco": 11.00, "unidade": "unidade" },
+            { "id":"cxb_pasta", "descricao": "Decoração em pasta americana", "preco": 15.00, "unidade": "unidade" }
+          ]
+        },
+        {
+          "id": "dp_cupcake",
+          "nome": "Cupcake",
+          "opcoes": {
+            "sabores": ["Doce de leite", "Chocolate", "Coco", "Ninho", "Maracujá", "Bicho de pé", "Paçoca"], 
+            "massa": ["Chocolate", "Branca (Baunilha)"]
+          },
+          "variacoes": [
+            { "id":"cup_m_chan", "descricao": "Mini - Chantininho", "preco": 3.00, "unidade": "unidade" },
+            { "id":"cup_g_chan", "descricao": "Grande - Chantininho", "preco": 5.00, "unidade": "unidade" },
+            { "id":"cup_m_pasta", "descricao": "Mini - Decoração em pasta americana", "preco": 4.50, "unidade": "unidade" },
+            { "id":"cup_g_pasta", "descricao": "Grande - Decoração em pasta americana", "preco": 7.00, "unidade": "unidade" }
+          ]
+        }
+      ]
+    }
+  ]
+}
