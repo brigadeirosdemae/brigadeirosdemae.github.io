@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Head from "next/head";
+import { Chat } from "./components/chat";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -67,7 +68,10 @@ export default function RootLayout({
                 </div>
                 <p className="text-gray-500 mt-4 text-sm">&copy; 2025 Brigadeiros de Mãe. Todos os direitos reservados.</p>
             </div>
-        </footer>        
+        </footer>   
+
+        <Chat />
+
       </body>
     </html>
   );
