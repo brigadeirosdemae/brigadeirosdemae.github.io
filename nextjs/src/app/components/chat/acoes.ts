@@ -1,0 +1,71 @@
+export default {
+  acoes: [
+    {
+      "id": "10001",
+      "name": "Buscar Produtos por nome",
+      "sugestao": "Qual é o nome do produto que você está procurando?",
+      "params": {
+        "nome": {
+          "type": "string",
+          "required": true,
+          "description": "Nome ou parte do nome do produto a ser buscado"
+        }
+      }
+    },
+    {
+      "id": "10002",
+      "name": "Buscar Produtos por categoria",
+      "sugestao": "Você sabe qual categoria de produto? Bolo, Doces, Docês finos?",
+      "params": {
+        "categoria": {
+          "type": "string",
+          "required": true,
+          "description": "Categoria do produto a ser buscado"
+        }
+      }
+    },
+    {
+      "id": "10003",
+      "name": "Buscar Produtos por faixa de preço",
+      "sugestao": "Qual é o preço mínimo e máximo que você deseja?",
+      "params": {
+        "precoMin": {
+          "type": "number",
+          "required": true,
+          "description": "Preço mínimo do produto a ser buscado"
+        },
+        "precoMax": {
+          "type": "number",
+          "required": true,
+          "description": "Preço máximo do produto a ser buscado"
+        }
+      }
+    },
+    {
+      "id": "10004",
+      "name": "Buscar Produtos em promoção",
+      "sugestao": "Você gostaria de ver os produtos que estão em promoção?",
+      "params": {}
+    },
+    {
+      "id": "10005",
+      "name": "Pedir produto",
+      "sugestao": "Qual o produto que você deseja pedir?",
+      "params": {
+        "produto": {
+          "type": "string",
+          "required": true,
+          "description": "Nome do produto que deseja pedir"
+        }
+      }
+    },
+    {
+      "id": "10005",
+      "name": "Visualizar Pedido",
+      "sugestao": "",
+      "params": {
+      }
+    }
+
+  ]
+}
