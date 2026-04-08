@@ -52,7 +52,6 @@ export default function RootLayout({
                 <nav className="mt-4 border-t border-b border-gray-200 py-2">
                     <div className="flex justify-center space-x-4 md:space-x-8">
                         <a href="/" className="text-brand-dark tracking-wider uppercase text-sm font-bold">Início</a>
-                        <a href="/encomendas" className="text-gray-600 tracking-wider uppercase text-sm font-semibold hover:text-brand-accent transition duration-300">Encomendas</a>
                     </div>
                 </nav>
             </div>
