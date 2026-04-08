@@ -10,16 +10,6 @@ import Loading from "./components/ui/Loading";
 
 export default function Home() {
 
-  const [products, setProducts] = useState<Product[]>([]);
-
-  useEffect(() => {
-    ProductManager.fetch().then((pm) => {
-      const productsData = pm.getRandomProducts({total: 3});
-      setProducts(productsData);
-    });
-
-  }, [])
-
   return (
     <>
     <main>        
@@ -27,36 +17,6 @@ export default function Home() {
              <h2 className="text-3xl md:text-4xl font-heading font-bold text-brand-dark mb-4">Sabor que abraça a alma.</h2>
              <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-8">Cada doce é uma receita de família, um resgate de memórias afetivas. Feitos artesanalmente com os melhores ingredientes para adoçar seus momentos mais especiais.</p>
              <a href="#produtos" className="bg-brand-dark text-white font-bold py-3 px-10 rounded-full hover:bg-brand-accent transition-all duration-300 transform hover:scale-105">Conheça nossas delícias</a>
-        </section>
-       
-        <section id="produtos" className="bg-brand-cream py-20">
-            <div className="container mx-auto px-6">
-                <h2 className="text-3xl md:text-4xl font-heading font-bold text-center text-brand-dark mb-12">
-                  Faça sua encomenda
-                </h2>
-
-                {!products.length && <div className="flex justify-center w-full"><Loading /></div>}
-
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-                  {
-                    products.map(product => <ProductView 
-                      key={ product.id }
-                      title={ product.nome }
-                      category={ product?.category?.categoria || "" }
-                      smallDescription={ product.descricao || "" }
-                      image={{url: product.imagem || "", alt: product.descricao || ""}}
-                    />)
-                  }
-                                      
-
-                </div>
-                <div className="text-center mt-12  gap-4 mx-auto">
-                    <a href="/encomendas" className="bg-brand-dark text-white font-bold py-3 px-10 rounded-full hover:bg-brand-accent transition-all duration-300">
-                      Ver todos os produtos
-                    </a>
-                </div>
-            </div>
         </section>
 
         <section id="sobre" className="bg-brand-off-white py-20">
